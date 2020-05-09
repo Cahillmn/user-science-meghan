@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>User Science Journal</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css " rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet'
+        type='text/css'>
+    <link
+        href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+        rel='stylesheet' type='text/css'>
+    <link href="css/clean-blog.min.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Meghan Cahill</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Blog
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+                            <a class="dropdown-item" href="index.html">Home</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Page Header -->
+    <header class="masthead" style="background-image: url('img/blue banner.jpg')">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <div class="post-heading">
+                        <center>
+                            <h1>Accessibility Test</h1>
+                        </center>
+                        <center>
+                            <h2 class="subheading">An accessibility test of the Thymes website
+                        </center>
+                        </h2>
+                        <center><span class="meta">Posted by
+                                <a href="#">Meghan Cahill</a>
+                                on May 9, 2020</span></center>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Post Content -->
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+
+                    <center><a href="#">
+                            <img class="img-fluid" src="img/Post 5 img/Thymes Logo.JPG" alt="Thymes logo">
+                        </a></center>
+
+                    <p>Thymes is an independent company located in Minneapolis, Minnesota that produces and sells
+                        handcrafted bath/body and home fragrance products. Their website,
+                        <a href="http://www.thymes.com/">http://www.thymes.com</a>, provides information on available
+                        products that can be purchased online. The intended audience of this site are people who are
+                        interested in purchasing and learning more about these products.
+                    </p>
+
+                    <p>This week I conducted an accessibility test of this site and will provide a summary of my
+                        findings.</p>
+
+                    <h2 class="section-heading">Tools and standards used to evaluate the site</h2>
+                    <p></p>
+
+                    <p>I focused on the WCAG 2.1 guidelines since this is not a federally funded site and therefore not
+                        subject to section 508. I looked at three factors to determine the accessibility of the website.
+                    </p>
+
+                    <ul>
+                        <li>Whether the website can be interpreted by the user if they have impairments such as limited
+                            sight or other disabilities that would affect their ability to understand information
+                            included in the site.</li>
+                        <li>Whether a user could operate the website with disabilities like motor impairments.</li>
+                        <li>Is the website predictable and set up in a way to correct mistakes?</li>
+                    </ul>
+
+                    <p>I evaluated the website by manually reviewing it and using Wave and Lighthouse.</p>
+
+                    <h2 class="section-heading">Findings and Results</h2>
+                    <p>Using Lighthouse I evaluated the accessibility of the site. </p>
+                    <p></p>
+
+                    <a href="#">
+                        <img class="img-fluid" src="img/Post 5 img/Lighthouse accessibility.jpg"
+                            alt="Results of Lighthouse test">
+                    </a>
+
+                    <p>Overall it gave the website a score of 80/100 indicating several issues:
+                    </p>
+
+                    <ul>
+                        <li>Background and foreground colors do not have a sufficient contrast ratio</li>
+                        <li>Form elements do not have associated labels</li>
+                        <li>The browser zoom has been turned off</li>
+                        <li>Links do not have a discernible name </li>
+
+                    </ul>
+
+                    <p>I also reviewed the site using WAVE and found similar results. The one additional thing
+                        identified in WAVE was the use of unordered lists in their dropdown menus.</p>
+
+                    <a href="#">
+                        <img class="img-fluid" src="img/Post 5 img/Unordered list.jpg"
+                            alt="Example of an unordered list message">
+                    </a>
+                    <p></p>
+
+                    <h2 class="section-heading">Issues and possible solutions</h2>
+
+                    <p></p>
+
+                    <h3>Background and foreground colors do not have a sufficient contrast ratio</h3>
+
+                    <p>The site uses very muted colors likely to create a relaxing experience when viewing it. This
+                        makes sense when it comes to the type of product they are selling. </p>
+
+                    <a href="#">
+                        <img class="img-fluid" src="img/Post 5 img/Thymes homepage.jpg" alt="Thymes homepage">
+                    </a>
+
+                    <p>It’s nice for those who can see but for those who are visually impaired, the lack of contrast can
+                        make it difficult for users to use the site. The site tries to fix this by using contrast layers
+                        behind the light grey text. On some pages, the image is so light that the white contrast layer
+                        blends into the page and you lose the contrast.</p>
+
+                    <a href="#">
+                        <img class="img-fluid" src="img/Post 5 img/Light contrast.jpg"
+                            alt="Example of a page with light contrast">
+                    </a>
+
+                    <p>One possible solution to this would be to put a border around the contrast layer.</p>
+
+                    <a href="#">
+                        <img class="img-fluid" src="img/Post 5 img/Contrast Solution.JPG"
+                            alt="Possible solution for contrast issue">
+                    </a>
+                    <p></p>
+
+                    <h3>Form elements do not have associated labels</h3>
+
+                    <p>The site handles form labels differently in different places. For example, on the form to sign up
+                        for an account or to order goods it uses form labels. In other areas such as the search box and
+                        signing up for emails, they have just used placeholders instead of labels. They use light grey
+                        text on the placeholder which has very poor contrast and is difficult for the visually impaired.
+                    </p>
+
+                    <a href="#">
+                        <img class="img-fluid" src="img/Post 5 img/search as is.JPG" alt="Search field without a label">
+                    </a>
+
+                    <p>Individuals with cognitive or motor impairments can have difficulty with placeholders because
+                        depending on how they are coded, they can act differently. For example, sometimes when you click
+                        in the field the placeholder disappears. Other times when you click in the field you have to
+                        delete the placeholder to add your information.</p>
+
+                    <p>Lastly, not all screen readers can read placeholder text aloud making it difficult for blind or
+                        visually impaired people to know it is there. Without a label they won’t know what to put in a
+                        field.</p>
+
+                    <p>The solution here is to include labels in all form fields and make the lines and text darker for
+                        more contrast.</p>
+
+                    <a href="#">
+                        <img class="img-fluid" src="img/Post 5 img/Search with Label.JPG" alt="Search field with label">
+                    </a>
+                    <p></p>
+
+                    <h3>The browser zoom has been turned off</h3>
+
+                    <p>Based on Lighthouse, the ability to zoom and enlarge the page has been turned off. Many visually
+                        impaired people rely on zoom to be able to read the contents of a site. This site uses small
+                        text which makes it really important to be able to zoom as needed. </p>
+
+                    <p>The obvious solution would be to turn zoom on.</p>
+
+                    <h3>Links do not have a discernible name </h3>
+
+                    <p>In both WAVE and Lighthouse this was identified as a low priority issue. For example, the
+                        following href format is commonly used on the site. The name of the image file is the same as
+                        the alternative text. This could be a problem for users of screen readers because they wouldn’t
+                        have any more information about the image than what’s already in the image name.</p>
+
+                    <a href="#">
+                        <img class="img-fluid" src="img/Post 5 img/href.jpg"
+                            alt="a sample of the HTML code for the image">
+                    </a>
+
+                    <p>On this website I don’t think it’s a big issue because both the image and the alternative text
+                        describe the product and gives the user enough information about where they will go when they
+                        click the link.
+                    </p>
+
+                    <h3>Use of unordered lists</h3>
+
+                    <p>Since the list of products is in alphabetical order, it might make more sense to use an ordered
+                        list instead of an unordered list. I navigated through the site with keyboard commands and
+                        didn’t find tabbing through the list to be a problem. The bigger problem was getting to the list
+                        from the main menu because when I hit return to open the list I still had to navigate through
+                        the utilities and main menu of the page to get to the first item of the list. Once I was in the
+                        list, tabbing took me from one item to the next alphabetically.</p>
+
+
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <ul class="list-inline text-center">
+                        <li class="list-inline-item">
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="copyright text-muted">Copyright &copy; meghanecahill.com 2020</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/clean-blog.min.js"></script>
+
+</body>
+
+</html>
