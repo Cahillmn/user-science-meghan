@@ -66,15 +66,15 @@
                 <div class="col-lg-8 col-md-10 mx-auto">
                     <div class="post-heading">
                         <center>
-                            <h1>Accessibility Test</h1>
+                            <h1>Make User Science Journal Accessible</h1>
                         </center>
                         <center>
-                            <h2 class="subheading">An accessibility test of the Thymes website
+                            <h2 class="subheading">Revising my post 2 blog for accessibility
                         </center>
                         </h2>
                         <center><span class="meta">Posted by
                                 <a href="#">Meghan Cahill</a>
-                                on May 9, 2020</span></center>
+                                on May 16, 2020</span></center>
                     </div>
                 </div>
             </div>
@@ -87,159 +87,137 @@
             <div class="row">
                 <div class="col-lg-8 col-md-10 mx-auto">
 
-                    <center><a href="#">
-                            <img class="img-fluid" src="img/Post 5 img/Thymes Logo.JPG" alt="Thymes logo">
-                        </a></center>
-
-                    <p>Thymes is an independent company located in Minneapolis, Minnesota that produces and sells
-                        handcrafted bath/body and home fragrance products. Their website,
-                        <a href="http://www.thymes.com/">http://www.thymes.com</a>, provides information on available
-                        products that can be purchased online. The intended audience of this site are people who are
-                        interested in purchasing and learning more about these products.
+                    <p>This week I performed an analysis of my second blog post
+                        <a href="https://meghanecahill.com/user-science-meghan/post2old.html">“Usable Design
+                            Analysis"</a>, .Using Wave and Lighthouse, I identified issues with accessibility that users
+                        would experience with my webpage. Based on these findings, I made improvements to the website to
+                        address these issues.
                     </p>
 
-                    <p>This week I conducted an accessibility test of this site and will provide a summary of my
-                        findings.</p>
 
-                    <h2 class="section-heading">Tools and standards used to evaluate the site</h2>
+                    <h2 class="section-heading">Findings</h2>
                     <p></p>
+                    <h3>Lighthouse</h3>
 
-                    <p>I focused on the WCAG 2.1 guidelines since this is not a federally funded site and therefore not
-                        subject to section 508. I looked at three factors to determine the accessibility of the website.
+                    <p>In Lighthouse, the page initially had a score of 81 for accessibility.
                     </p>
-
-                    <ul>
-                        <li>Whether the website can be interpreted by the user if they have impairments such as limited
-                            sight or other disabilities that would affect their ability to understand information
-                            included in the site.</li>
-                        <li>Whether a user could operate the website with disabilities like motor impairments.</li>
-                        <li>Is the website predictable and set up in a way to correct mistakes?</li>
-                    </ul>
-
-                    <p>I evaluated the website by manually reviewing it and using Wave and Lighthouse.</p>
-
-                    <h2 class="section-heading">Findings and Results</h2>
-                    <p>Using Lighthouse I evaluated the accessibility of the site. </p>
-                    <p></p>
-
                     <a href="#">
-                        <img class="img-fluid" src="img/Post 5 img/Lighthouse accessibility.jpg"
+                        <img class="img-fluid" src="img/Post 6 img/Lighthouse before.png"
                             alt="Results of Lighthouse test">
                     </a>
+                    <p></p>
 
-                    <p>Overall it gave the website a score of 80/100 indicating several issues:
-                    </p>
+                    <p>Three errors were identified.</p>
 
-                    <ul>
-                        <li>Background and foreground colors do not have a sufficient contrast ratio</li>
-                        <li>Form elements do not have associated labels</li>
-                        <li>The browser zoom has been turned off</li>
-                        <li>Links do not have a discernible name </li>
+                    <ol>
+                        <li>The images did not contain alt attributes (high priority)</li>
+                        <li>Links did not have a discernible name (low priority)</li>
+                        <li>Lists contain other elements besides list, script and template elenents (low priority)</li>
+                    </ol>
 
-                    </ul>
+                    <h3>Wave</h3>
 
-                    <p>I also reviewed the site using WAVE and found similar results. The one additional thing
-                        identified in WAVE was the use of unordered lists in their dropdown menus.</p>
+                    <p>Wave had many of the same issues but also found contrast errors in my header. It also noted the
+                        underlined text as an alert.</p>
+                    <a href="#">
+                        <img class="img-fluid" src="img/Post 6 img/Wave before.jpg" alt="Results of Wave test">
+                    </a>
+
+                    <h2 class="section-heading">Issues addressed</h2>
+                    <p></p>
+                    <h3>Use of underlining</h3>
+                    <p>This was a problem because underlining often means there’s a hyperlink. I had used it to
+                        emphasize text which was not good design. To fix it I removed the underline element from my
+                        code. </p>
+                    <p></p>
+                    <a href="#">
+                        <img class="img-fluid" src="img/Post 6 img/underline.jpg"
+                            alt="Example of removing underlined code">
+                    </a>
+                    <p></p>
+                    <h3>Missing Alternative Text</h3>
+
+                    <p>None of my images had alternative text. It is important to include for those who have visual
+                        impairments and rely on screen readers. The screen reader will read the descriptive text in the
+                        alternative text. This makes it clear to the user what the images are. To fix it I added alt
+                        text to all of my images.</p>
+                    <p></p>
 
                     <a href="#">
-                        <img class="img-fluid" src="img/Post 5 img/Unordered list.jpg"
-                            alt="Example of an unordered list message">
+                        <img class="img-fluid" src="img/Post 6 img/Alt text .jpg"
+                            alt="Example of adding alternative text">
                     </a>
                     <p></p>
 
-                    <h2 class="section-heading">Issues and possible solutions</h2>
+                    <h3>Empty Links</h3>
 
-                    <p></p>
 
-                    <h3>Background and foreground colors do not have a sufficient contrast ratio</h3>
-
-                    <p>The site uses very muted colors likely to create a relaxing experience when viewing it. This
-                        makes sense when it comes to the type of product they are selling. </p>
-
-                    <a href="#">
-                        <img class="img-fluid" src="img/Post 5 img/Thymes homepage.jpg" alt="Thymes homepage">
-                    </a>
-
-                    <p>It’s nice for those who can see but for those who are visually impaired, the lack of contrast can
-                        make it difficult for users to use the site. The site tries to fix this by using contrast layers
-                        behind the light grey text. On some pages, the image is so light that the white contrast layer
-                        blends into the page and you lose the contrast.</p>
-
-                    <a href="#">
-                        <img class="img-fluid" src="img/Post 5 img/Light contrast.jpg"
-                            alt="Example of a page with light contrast">
-                    </a>
-
-                    <p>One possible solution to this would be to put a border around the contrast layer.</p>
-
-                    <a href="#">
-                        <img class="img-fluid" src="img/Post 5 img/Contrast Solution.JPG"
-                            alt="Possible solution for contrast issue">
-                    </a>
-                    <p></p>
-
-                    <h3>Form elements do not have associated labels</h3>
-
-                    <p>The site handles form labels differently in different places. For example, on the form to sign up
-                        for an account or to order goods it uses form labels. In other areas such as the search box and
-                        signing up for emails, they have just used placeholders instead of labels. They use light grey
-                        text on the placeholder which has very poor contrast and is difficult for the visually impaired.
+                    <p>The page included three placeholder links to Twitter, Facebook, and Github. None of them included
+                        the URL to the applicable site. In addition to the URL being missing, there was no text
+                        describing the purpose of the link. This would also make it difficult for a screen reader to
+                        interpret the purpose of the link. To fix it I added the URL’s and descriptive text.
                     </p>
 
                     <a href="#">
-                        <img class="img-fluid" src="img/Post 5 img/search as is.JPG" alt="Search field without a label">
-                    </a>
-
-                    <p>Individuals with cognitive or motor impairments can have difficulty with placeholders because
-                        depending on how they are coded, they can act differently. For example, sometimes when you click
-                        in the field the placeholder disappears. Other times when you click in the field you have to
-                        delete the placeholder to add your information.</p>
-
-                    <p>Lastly, not all screen readers can read placeholder text aloud making it difficult for blind or
-                        visually impaired people to know it is there. Without a label they won’t know what to put in a
-                        field.</p>
-
-                    <p>The solution here is to include labels in all form fields and make the lines and text darker for
-                        more contrast.</p>
-
-                    <a href="#">
-                        <img class="img-fluid" src="img/Post 5 img/Search with Label.JPG" alt="Search field with label">
+                        <img class="img-fluid" src="img/Post 6 img/Social links.jpg"
+                            alt="Example of adding URL's and labels to hyperlink">
                     </a>
                     <p></p>
 
-                    <h3>The browser zoom has been turned off</h3>
+                    <h3>Contrast Errors</h3>
 
-                    <p>Based on Lighthouse, the ability to zoom and enlarge the page has been turned off. Many visually
-                        impaired people rely on zoom to be able to read the contents of a site. This site uses small
-                        text which makes it really important to be able to zoom as needed. </p>
-
-                    <p>The obvious solution would be to turn zoom on.</p>
-
-                    <h3>Links do not have a discernible name </h3>
-
-                    <p>In both WAVE and Lighthouse this was identified as a low priority issue. For example, the
-                        following href format is commonly used on the site. The name of the image file is the same as
-                        the alternative text. This could be a problem for users of screen readers because they wouldn’t
-                        have any more information about the image than what’s already in the image name.</p>
+                    <p>The final error identified by Wave but not Lighthouse was a lack of contrast between the
+                        background and foreground of my header. I had used a medium blue colored banner and changed it
+                        to a darker one. I still got the error when I re-evaluated the page in Wave. It turns out that
+                        Wave was thinking that both the foreground and background were white even though the background
+                        was dark blue. This turned out to be a false error that I chose to ignore.</p>
 
                     <a href="#">
-                        <img class="img-fluid" src="img/Post 5 img/href.jpg"
-                            alt="a sample of the HTML code for the image">
+                        <img class="img-fluid" src="img/Post 6 img/Contrast error.jpg"
+                            alt="Picture of Wave contrast error">
                     </a>
 
-                    <p>On this website I don’t think it’s a big issue because both the image and the alternative text
-                        describe the product and gives the user enough information about where they will go when they
-                        click the link.
+                    <h2 class="section-heading">Outcome</h2>
+
+                    <p>After making all of these fixes, I re-evaluated my page in Wave and Lighthouse and saw
+                        improvement. To move to the revised site, <a
+                            href="https://meghanecahill.com/user-science-meghan/post2.html">click here.</a></p>
+
+                    <h3>Lighthouse</h3>
+
+                    <p>My score increased from 81 to 96. This was an 18.5% improvement.
+                    </p>
+                    <a href="#">
+                        <img class="img-fluid" src="img/Post 6 img/Lighthouse after.png"
+                            alt="Results of Lighthouse test">
+                    </a>
+                    <p></p>
+
+                    <h3>Wave</h3>
+
+                    <p>All previous errors except the false contrast errors were resolved. </p>
+                    <a href="#">
+                        <img class="img-fluid" src="img/Post 6 img/Wave after.jpg" alt="Results of Wave test">
+                    </a>
+                    <p></p>
+
+                    <h2 class="section-heading">Challenges</h2>
+
+                    <p>My biggest challenge was trying to get the contrast right on my menu. I spent hours playing with
+                        css and html to try and change the contrast with no success. Once I confirmed with my teacher
+                        that this was a false error, I was greatly relieved.
                     </p>
 
-                    <h3>Use of unordered lists</h3>
+                    <p>The other thing was the third issue in Lighthouse which identified unexpected elements were being
+                        used in the list elements. I didn’t bother to fix this as it was a low priority and I was
+                        concerned that I would break functionality by changing elements in the list.
+                    </p>
 
-                    <p>Since the list of products is in alphabetical order, it might make more sense to use an ordered
-                        list instead of an unordered list. I navigated through the site with keyboard commands and
-                        didn’t find tabbing through the list to be a problem. The bigger problem was getting to the list
-                        from the main menu because when I hit return to open the list I still had to navigate through
-                        the utilities and main menu of the page to get to the first item of the list. Once I was in the
-                        list, tabbing took me from one item to the next alphabetically.</p>
+                    <h2 class="section-heading">Use of Bootstrap</h2>
+
+                    <p>I think using Bootstrap is helpful in providing a template to create the website. For the most
+                        part, the template supported accessibility. The problems I had were related to not filling in
+                        labels and alt text which was based on my customization of the template.</p>
 
 
                 </div>
@@ -252,39 +230,39 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-          <div class="row">
-            <div class="col-lg-8 col-md-10 mx-auto">
-              <ul class="list-inline text-center">
-                <li class="list-inline-item">
-                  <a target="_blank" href="https://www.twitter.com" class="twitter">Link to Twitter
-                    <span class="fa-stack fa-lg">
-                      <i class="fas fa-circle fa-stack-2x"></i>
-                      <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
-                    </span>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a target="_blank" href="https://www.facebook.com" class="facebook">Link to Facebook
-                    <span class="fa-stack fa-lg">
-                      <i class="fas fa-circle fa-stack-2x"></i>
-                      <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
-                    </span>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a target="_blank" href="https://www.github.com" class="github">Link to Github
-                    <span class="fa-stack fa-lg">
-                      <i class="fas fa-circle fa-stack-2x"></i>
-                      <i class="fab fa-github fa-stack-1x fa-inverse"></i>
-                    </span>
-                  </a>
-                </li>
-              </ul>
-              <p class="copyright text-muted">Copyright &copy; meghanecahill.com 2020</p>
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <ul class="list-inline text-center">
+                        <li class="list-inline-item">
+                            <a target="_blank" href="https://www.twitter.com" class="twitter">Link to Twitter
+                                <span class="fa-stack fa-lg">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a target="_blank" href="https://www.facebook.com" class="facebook">Link to Facebook
+                                <span class="fa-stack fa-lg">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a target="_blank" href="https://www.github.com" class="github">Link to Github
+                                <span class="fa-stack fa-lg">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="copyright text-muted">Copyright &copy; meghanecahill.com 2020</p>
+                </div>
             </div>
-          </div>
         </div>
-      </footer>
+    </footer>
 
     <!-- Bootstrap core JavaScript -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
